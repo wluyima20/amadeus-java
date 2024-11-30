@@ -31,7 +31,7 @@ public class FlightOfferSearch extends Resource {
   protected FlightOfferSearch() {}
 
   @ToString
-  public class Itinerary {
+  public static class Itinerary {
     private @Getter String duration;
     private @Getter SearchSegment[] segments;
 
@@ -40,7 +40,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class SearchSegment {
+  public static class SearchSegment {
     private @Getter AirportInfo departure;
     private @Getter AirportInfo arrival;
     private @Getter String carrierCode;
@@ -58,14 +58,14 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class OperatingFlight {
+  public static class OperatingFlight {
     private @Getter String carrierCode;
 
     protected OperatingFlight() {}
   }
 
   @ToString
-  public class FlightStop {
+  public static class FlightStop {
     private @Getter String iataCode;
     private @Getter String duration;
     private @Getter String arrivalAt;
@@ -75,7 +75,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class Co2Emissions {
+  public static class Co2Emissions {
     private @Getter int weight;
     private @Getter String weightUnit;
     private @Getter String cabin;
@@ -84,7 +84,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class AirportInfo {
+  public static class AirportInfo {
     private @Getter String iataCode;
     private @Getter String terminal;
     private @Getter String at;
@@ -93,14 +93,14 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class Aircraft {
+  public static class Aircraft {
     private @Getter String code;
 
     protected Aircraft() {}
   }
 
   @ToString
-  public class SearchPrice {
+  public static class SearchPrice {
     private @Getter String currency;
     private @Getter String total;
     private @Getter String base;
@@ -116,7 +116,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class Fee {
+  public static class Fee {
     private @Getter String amount;
     private @Getter String type;
 
@@ -124,7 +124,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class Tax {
+  public static class Tax {
     private @Getter String amount;
     private @Getter String code;
 
@@ -132,7 +132,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class AdditionalService {
+  public static class AdditionalService {
     private @Getter String amount;
     private @Getter String type;
 
@@ -140,7 +140,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class PricingOptions {
+  public static class PricingOptions {
     private @Getter boolean includedCheckedBagsOnly;
     private @Getter String[] fareType;
     private @Getter String[] corporateCodes;
@@ -150,7 +150,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class TravelerPricing {
+  public static class TravelerPricing {
     private @Getter String travelerId;
     private @Getter String fareOption;
     private @Getter String travelerType;
@@ -162,7 +162,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class FareDetailsBySegment {
+  public static class FareDetailsBySegment {
     private @Getter String segmentId;
     private @Getter String cabin;
     private @Getter String fareBasis;
@@ -180,7 +180,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class AllotmentDetails {
+  public static class AllotmentDetails {
     private @Getter String tourName;
     private @Getter String tourReference;
 
@@ -188,7 +188,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class BaggageAllowance {
+  public static class BaggageAllowance {
     private @Getter int quantity;
     private @Getter int weight;
     private @Getter String weightUnit;
@@ -197,7 +197,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class AdditionalServiceRequest {
+  public static class AdditionalServiceRequest {
     private @Getter BaggageAllowance chargeableCheckedBags;
     private @Getter String chargeableSeatNumber;
     private @Getter String[] otherServices;
@@ -206,7 +206,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class Amenity {
+  public static class Amenity {
     private @Getter String code;
     private @Getter String description;
     private @Getter Boolean isChargeable;
@@ -216,7 +216,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class FareRules {
+  public static class FareRules {
     private @Getter String currency;
     private @Getter TermAndCondition[] rules;
 
@@ -224,7 +224,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class TermAndCondition {
+  public static class TermAndCondition {
     private @Getter String category;
     private @Getter String circumstances;
     private @Getter boolean notApplicable;
@@ -235,7 +235,7 @@ public class FlightOfferSearch extends Resource {
   }
 
   @ToString
-  public class Description {
+  public static class Description {
     private @Getter String descriptionType;
     private @Getter String text;
 
